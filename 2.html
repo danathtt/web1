@@ -3,14 +3,47 @@
   <head>
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="2.css">
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
     <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
+      <li><a href="1.html" class="saw" id="just">HTML</a></li>
+      <li><a href="2.html" class="saw active">CSS</a></li>
       <li><a href="3.html">JavaScript</a></li>
     </ol>
     <h2>CSS</h2>
+    <h5>선택자</h5>
+    <ul>
+      <li>style=""안에 쓰면 css로 효과가 적용된다! 딱 하나 개별 적용할 때 쓰기 굿</li>
+      <li>밑줄 없애고 싶으면 text-decoration: none하는 것이고 밑줄 넣고 싶으면 : underline하면 된다</li>
+      <li>css 코드 찾아볼 때는 'css ~~ property' 일케 찾아보면 된다->보통 W3C 홈피에서 잘 알려줌</li>
+      <li>class="#"해서 class 설정하고 css에서 이거 지정할 때는 .#으로 해준다. class는 앞에 온점! </li>
+      <li>하나에 class 여러 개를 설정할 수 있으며, 띄어쓰기로 구분한다. ex. class="saw active"는 saw css도 적용되고 active css도 적용된다. 코드에서 더 뒤에 있는 코드로 적용</li>
+      <li>class와 비슷한 얘가 id다. id는 앞에 #을 붙인다. ex. id="just" #just    // id는 class와 다르게 순서와 상관 없이 만약 class와 중복 적용된 상황이라면 코드 순서가 어떻든 무조건 id로 css가 적용된다.</li>
+      <li>선택자: tag(앞에 아무것도 없이 입력하는 것)가 가장 약하고 다음이 class, 가장 센 얘가 id다.</li>
+      <li>class는 중복해서 써도 좋지만 id는 딱 하나만 써야한다. ex. class="saw"를 여러 번 써도 되지만 id="active"를 여러 번 쓰면 안 된다. id="different"와 같은 다른 id 값은 당연히 써도 된다.</li>
+    </ul>
+    <a href="https://www.w3schools.com/cssref/css_selectors.asp" id="link" target="_blank">css selector 추가 정보</a>
+    <h5>박스 모델</h5>
+    <h6>제목</h6>
+    <p>본문본문<a href="https://www.youtube.com/watch?v=MLjCVUspcDo&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B&index=8" id="박스_모델_a">링크</a>본문본문본문본문본문본문본문본문본문</p>
+    <p id="으악">데헷 데헷 ><</p>
+    <h3>좀 더</h3>
+    <h4>컴팩트하게 해보자</h4>
+    <a class="패딩마진">패딩이 안쪽, 마진이 바깥</a>
+    <a class="패딩마진">패딩이 안쪽, 마진이 바깥</a>
+    <p>오른쪽 커서 누르고 '검사' 누르면 마진, 패딩, 보더 등등 보기 편함</p>
+    <p>선은 따로 만들지 말고 border로 줘라! border-bottom 등 하나 지정해서 하면 됌</p>
+
+    <div id="grid">
+    <div>NAVIGATION</div>
+    <div>ARTICLE</div>
+    <!--
+    div 태그는 아무 의미 없어서 그럴 때 써라, 비슷한 태그로 span이 있는데
+    span과 div의 차이점은 div는 block level element고 span은 inline element라는거다(중요)-->
+    </div>
+    <h1>css-11번 영상 볼 차례</h1>
+
   </body>
 </html>

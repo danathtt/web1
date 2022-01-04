@@ -1,0 +1,88 @@
+body{
+  margin: 0px;
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+h1{
+  text-align: center;
+  font-size: 45px;
+}
+#just{
+  color:purple;
+}
+.saw{
+  color:grey;
+}
+.active{
+  color: red;
+}
+#link{
+  color:blue;
+  text-decoration: underline;
+}
+/*
+block level element: 화면 전체를 씀(border 범위 보셈)
+*/
+h6{
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+  /*
+  display: inline;
+  이걸 넣으면 block level element도 inline element처럼 자기 넓이만큼만 씀
+  */
+}
+/*
+inline element: 자기 넓이만큼만 씀(border 범우 보셈)
+*/
+#박스_모델_a{
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+  /*
+  display: block;
+  이걸 넣으면 block level element처럼
+  */
+}
+#으악{
+  display:none;
+  /*이거 하면 걍 선택된 거 자체가 안 보임! 요긴하게 쓰임. 이렇게 열고 닫지 않아도 되고 특정 하나 안 보이게 굿, 아니면 그 a 같이 포괄적으로 한 종류 안 보이게도 ㄱㄴ하지
+  */
+}
+h3, h4{
+  border: 5px solid red;
+}
+.패딩마진{
+  border: 5px solid blue;
+  padding:10px;
+  margin: 20px;
+  display: block;
+  width: 100px;
+  /* width가 그 block의 width임 */
+}
+h1{
+  border-bottom: 5px solid black;
+  margin: 0px;
+  padding: 10px;
+}
+ol{
+  border-right: 3px solid grey;
+  width: 90px;
+  /*width로 블록 크기 조정!*/
+  margin: 0px;
+  padding:30px;
+}
+div{
+  border: 5px solid gray;
+}
+#grid{
+  border: 5px solid pink;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  /*첫번째 colum은 150px, 두번째 colum은 나머지 공간 차지(1fr)라고 정한거임. 띄어쓰기 기준으로 다른 객체 선택
+  둘 다 1fr로 하면 주어진 공간에서 유동적으로 반띵함
+  grid-template-colums: 2fr 1fr; 로 하면 주어진 공간에서 2:1로 유동적 내분함
+  */
+}
